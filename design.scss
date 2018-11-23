@@ -1,0 +1,15 @@
+//Create the beginnings of your design by scaffolding out the core system using a $rootColor variable and nested declarations
+
+$rootColor: maroon;
+
+body {
+  header {
+    color: darken( $rootColor, 25% );
+  }
+  main {
+    color: $rootColor;
+  }
+  footer {
+    color: lighten( $rootColor, 25% );
+  }
+}
