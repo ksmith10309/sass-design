@@ -1,15 +1,21 @@
-//Create the beginnings of your design by scaffolding out the core system using a $rootColor variable and nested declarations
+/*
+Modularize your design by creating the following file structure
+design.scss
+At the top, do an @import for each of the following partials ...
+_reset.scss (paste in the meyer reset)
+_variables.scss (set a few key variables for your design)
+$rootColor
+$accentColor
+$bleed
+$space
+_mixins.scss
+Create a mixin to provide a border radius (given a parameter)
+Create a mixin to specify the right bleed between cards and decks
+_core.scss
+Core styles for your design (i.e. body tag, etc)
+*/
 
-$rootColor: maroon;
-
-body {
-  header {
-    color: darken( $rootColor, 25% );
-  }
-  main {
-    color: $rootColor;
-  }
-  footer {
-    color: lighten( $rootColor, 25% );
-  }
-}
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'core';

@@ -1,0 +1,34 @@
+body {
+
+  header {
+    background-color: darken( $rootColor, 25% );
+    color: $accentColor;
+    margin-bottom: $space;
+  }
+
+  main {
+    background-color: white;
+    color: $rootColor;
+    
+    div.deck {
+      background-color: $rootColor;
+      @include bleed($bleed);
+      @include corners(3px);
+
+      div.card {
+        background-color: white;
+        color: $rootColor;
+        @include corners(3px);
+      }
+
+    }
+
+  }
+
+  footer {
+    background-color: darken( $rootColor, 25% );
+    color: $accentColor;
+    margin-top: $space;
+  }
+
+}
